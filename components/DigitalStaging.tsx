@@ -10,8 +10,8 @@ const modules = [
     beforeLabel: 'Grey Sky',
     afterLabel: 'Golden Hour',
     // 👇 UPDATE THESE IMAGES
-    beforeImage: 'cama.png', 
-    afterImage: 'camasunset.jpeg',
+    beforeImage: '/cama.png', 
+    afterImage: '/camasunset.jpeg',
     description: 'Replace flat shipyard lighting with dynamic "Golden Hour" or "High Noon" sun profiles to drive emotional engagement.',
   },
   {
@@ -21,8 +21,8 @@ const modules = [
     beforeLabel: 'Dry Dock',
     afterLabel: 'Deep Ocean',
     // 👇 UPDATE THESE IMAGES
-    beforeImage: 'dockwater.png', 
-    afterImage: 'digitalwater.png',
+    beforeImage: '/dockwater.png', 
+    afterImage: '/digitalwater.png',
     description: 'Place the hull in realistic motion-blurred water, removing all land elements, cradles, and industrial clutter.',
   },
   {

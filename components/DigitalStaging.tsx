@@ -9,7 +9,7 @@ const modules = [
     icon: Sun,
     beforeLabel: 'Grey Sky',
     afterLabel: 'Golden Hour',
-    image: 'https://images.unsplash.com/photo-1544641666-41f237f3743c?q=80&w=2070',
+    image: 'camasunset.jpeg',
     description: 'Replace flat shipyard lighting with dynamic "Golden Hour" or "High Noon" sun profiles to drive emotional engagement.',
   },
   {
@@ -18,7 +18,7 @@ const modules = [
     icon: Droplets,
     beforeLabel: 'Dry Dock',
     afterLabel: 'Deep Ocean',
-    image: 'https://images.unsplash.com/photo-1605218427306-022ba801c178?q=80&w=2070',
+    image: 'digitalwater.png',
     description: 'Place the hull in realistic motion-blurred water, removing all land elements, cradles, and industrial clutter.',
   },
   {

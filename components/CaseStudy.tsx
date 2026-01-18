@@ -52,7 +52,7 @@ const CaseStudy: React.FC = () => {
                     {/* Image Container */}
                     <div className="relative aspect-[4/3] overflow-hidden rounded-sm group">
                         <img 
-                            src="https://files.fm/f/s93kqutyny" 
+                            src="Untitled design (45).png" 
                             alt="MVS Result" 
                             className="w-full h-full object-cover saturate-100 transition-all duration-700 group-hover:scale-105"
                         />

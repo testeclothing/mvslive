@@ -9,7 +9,9 @@ const modules = [
     icon: Sun,
     beforeLabel: 'Grey Sky',
     afterLabel: 'Golden Hour',
-    image: 'camasunset.jpeg',
+    // 👇 UPDATE THESE IMAGES
+    beforeImage: 'cama.png', 
+    afterImage: 'camasunset.jpeg',
     description: 'Replace flat shipyard lighting with dynamic "Golden Hour" or "High Noon" sun profiles to drive emotional engagement.',
   },
   {
@@ -18,7 +20,9 @@ const modules = [
     icon: Droplets,
     beforeLabel: 'Dry Dock',
     afterLabel: 'Deep Ocean',
-    image: 'digitalwater.png',
+    // 👇 UPDATE THESE IMAGES
+    beforeImage: 'dockwater.png', 
+    afterImage: 'digitalwater.png',
     description: 'Place the hull in realistic motion-blurred water, removing all land elements, cradles, and industrial clutter.',
   },
   {
@@ -27,13 +31,15 @@ const modules = [
     icon: Layers,
     beforeLabel: 'Dated',
     afterLabel: 'Modern',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2070',
+    // 👇 UPDATE THESE IMAGES
+    beforeImage: '/refit-before.jpg', 
+    afterImage: '/refit-after.jpg',
     description: 'Digitally reupholster furniture, declutter surfaces, and stage lifestyle elements to modernize older inventory.',
   },
 ];
 
 const DigitalStaging: React.FC = () => {
-  const [activeModule, setActiveModule] = useState(modules[1]);
+  const [activeModule, setActiveModule] = useState(modules[0]); // Default to first one
   const visualizerRef = useRef<HTMLDivElement>(null);
 
   const handleModuleSelect = (mod: typeof modules[0]) => {
@@ -135,9 +141,14 @@ const DigitalStaging: React.FC = () => {
 
                         {/* The Slider */}
                         <div className="relative overflow-hidden bg-black aspect-[4/3] lg:aspect-[16/10]">
+                            {/* 
+                                ⚠️ Make sure your ComparisonSlider.tsx component allows 
+                                'beforeImage' and 'afterImage' props! 
+                            */}
                             <ComparisonSlider 
                                 key={activeModule.id} 
-                                image={activeModule.image}
+                                beforeImage={activeModule.beforeImage}
+                                afterImage={activeModule.afterImage}
                                 labelBefore={activeModule.beforeLabel}
                                 labelAfter={activeModule.afterLabel}
                                 aspectRatio="aspect-[4/3] lg:aspect-[16/10]"

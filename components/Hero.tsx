@@ -54,14 +54,14 @@ const Hero: React.FC = () => {
                 
                 {/* Headline */}
                 <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-dark dark:text-white leading-[0.95] mb-4 lg:mb-6 tracking-tight opacity-0 animate-slide-up-delay-1">
-                    World-Class <br/>
-                    Marine Visuals. <br/>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon via-dark to-neon dark:via-white dark:to-neon bg-[length:200%_auto] animate-shine">Zero Logistics.</span>
+                    Turn Dry Dock <br/>
+                    Photos Into <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon via-dark to-neon dark:via-white dark:to-neon bg-[length:200%_auto] animate-shine">Sold Yachts.</span>
                 </h1>
 
                 {/* Subheader */}
                 <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg max-w-lg mb-6 lg:mb-8 font-light leading-relaxed border-l-2 border-dark/10 dark:border-white/10 pl-6 opacity-0 animate-slide-up-delay-2">
-                    MVS partners with elite brokerages to transform static inventory into cinematic assets. Replace your entire post-production department.
+                    Don't let bad weather or warehouse lighting kill your listing. We transform static inventory into high-converting water assets in 24 hours.
                 </p>
 
                 <div className="flex items-center gap-4 w-full sm:w-auto opacity-0 animate-slide-up-delay-2">

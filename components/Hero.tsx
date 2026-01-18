@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
                     
                     {/* Background (After) */}
                     <img 
-                        src="left.png" 
+                        src="right.png" 
                         alt="MVS Output"
                         className="absolute inset-0 w-full h-full object-cover saturate-[1.2]" 
                     />
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
                     {/* Foreground (Before) - Clipped */}
                     <div className="absolute inset-0 animate-scanner-clip bg-gray-100 dark:bg-[#050505]">
                         <img 
-                            src="right.png" 
+                            src="left.png" 
                             alt="Dock State"
                             className="w-full h-full object-cover brightness-75 opacity-90" 
                         />

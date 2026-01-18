@@ -9,7 +9,7 @@ const modules = [
     icon: Sun,
     beforeLabel: 'Grey Sky',
     afterLabel: 'Golden Hour',
-    // 👇 USING THE FILES YOU UPLOADED
+    // 👇 UPDATED: Filenames without the slash
     beforeImage: 'cama.png', 
     afterImage: 'camasunset.jpeg',
     description: 'Replace flat shipyard lighting with dynamic "Golden Hour" or "High Noon" sun profiles to drive emotional engagement.',
@@ -20,7 +20,7 @@ const modules = [
     icon: Droplets,
     beforeLabel: 'Dry Dock',
     afterLabel: 'Deep Ocean',
-    // 👇 USING THE FILES YOU UPLOADED
+    // 👇 UPDATED: Filenames without the slash
     beforeImage: 'dockwater.png', 
     afterImage: 'digitalwater.png',
     description: 'Place the hull in realistic motion-blurred water, removing all land elements, cradles, and industrial clutter.',
@@ -31,7 +31,7 @@ const modules = [
     icon: Layers,
     beforeLabel: 'Dated',
     afterLabel: 'Modern',
-    // We keep these as internet links until you upload specific refit photos
+    // We keep these as internet links until you upload refit photos
     beforeImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop&sat=-100',
     afterImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop',
     description: 'Digitally reupholster furniture, declutter surfaces, and stage lifestyle elements to modernize older inventory.',

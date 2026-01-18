@@ -9,7 +9,7 @@ const modules = [
     icon: Sun,
     beforeLabel: 'Grey Sky',
     afterLabel: 'Golden Hour',
-    // 👇 UPDATE THESE IMAGES
+    // ✅ FIXED: Added slash '/' to start of filenames
     beforeImage: '/cama.png', 
     afterImage: '/camasunset.jpeg',
     description: 'Replace flat shipyard lighting with dynamic "Golden Hour" or "High Noon" sun profiles to drive emotional engagement.',
@@ -20,7 +20,7 @@ const modules = [
     icon: Droplets,
     beforeLabel: 'Dry Dock',
     afterLabel: 'Deep Ocean',
-    // 👇 UPDATE THESE IMAGES
+    // ✅ FIXED: Added slash '/' to start of filenames
     beforeImage: '/dockwater.png', 
     afterImage: '/digitalwater.png',
     description: 'Place the hull in realistic motion-blurred water, removing all land elements, cradles, and industrial clutter.',
@@ -31,15 +31,15 @@ const modules = [
     icon: Layers,
     beforeLabel: 'Dated',
     afterLabel: 'Modern',
-    // 👇 UPDATE THESE IMAGES
-    beforeImage: '/refit-before.jpg', 
-    afterImage: '/refit-after.jpg',
+    // Note: If you have your own images for this, upload them and change these links to '/your-image.jpg'
+    beforeImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop&sat=-100', // Grayscale version
+    afterImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop', // Color version
     description: 'Digitally reupholster furniture, declutter surfaces, and stage lifestyle elements to modernize older inventory.',
   },
 ];
 
 const DigitalStaging: React.FC = () => {
-  const [activeModule, setActiveModule] = useState(modules[0]); // Default to first one
+  const [activeModule, setActiveModule] = useState(modules[0]); 
   const visualizerRef = useRef<HTMLDivElement>(null);
 
   const handleModuleSelect = (mod: typeof modules[0]) => {
@@ -63,7 +63,7 @@ const DigitalStaging: React.FC = () => {
         
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
-            {/* Left Content & Controls - order-1 puts it on top on mobile */}
+            {/* Left Content & Controls */}
             <div className="lg:col-span-5 flex flex-col justify-center w-full order-1 lg:order-1">
                 <div className="mb-8 lg:mb-12">
                     <div className="flex items-center gap-3 mb-4 lg:mb-6">
@@ -123,7 +123,7 @@ const DigitalStaging: React.FC = () => {
                 </div>
             </div>
 
-            {/* Right Visualizer - order-2 puts it on bottom on mobile */}
+            {/* Right Visualizer */}
             <div ref={visualizerRef} className="lg:col-span-7 w-full relative order-2 lg:order-2">
                 {/* Monitor Frame */}
                 <div className="relative p-0.5 bg-gradient-to-b from-gray-200 via-gray-300 to-gray-400 dark:from-gray-700 dark:via-gray-900 dark:to-black rounded-lg shadow-2xl">
@@ -141,10 +141,6 @@ const DigitalStaging: React.FC = () => {
 
                         {/* The Slider */}
                         <div className="relative overflow-hidden bg-black aspect-[4/3] lg:aspect-[16/10]">
-                            {/* 
-                                ⚠️ Make sure your ComparisonSlider.tsx component allows 
-                                'beforeImage' and 'afterImage' props! 
-                            */}
                             <ComparisonSlider 
                                 key={activeModule.id} 
                                 beforeImage={activeModule.beforeImage}

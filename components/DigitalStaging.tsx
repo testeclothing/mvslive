@@ -9,7 +9,7 @@ const modules = [
     icon: Sun,
     beforeLabel: 'Grey Sky',
     afterLabel: 'Golden Hour',
-    // ✅ FIXED: Added slash '/' to start of filenames
+    // 👇 USING THE FILES YOU UPLOADED
     beforeImage: 'cama.png', 
     afterImage: 'camasunset.jpeg',
     description: 'Replace flat shipyard lighting with dynamic "Golden Hour" or "High Noon" sun profiles to drive emotional engagement.',
@@ -20,7 +20,7 @@ const modules = [
     icon: Droplets,
     beforeLabel: 'Dry Dock',
     afterLabel: 'Deep Ocean',
-    // ✅ FIXED: Added slash '/' to start of filenames
+    // 👇 USING THE FILES YOU UPLOADED
     beforeImage: 'dockwater.png', 
     afterImage: 'digitalwater.png',
     description: 'Place the hull in realistic motion-blurred water, removing all land elements, cradles, and industrial clutter.',
@@ -31,15 +31,15 @@ const modules = [
     icon: Layers,
     beforeLabel: 'Dated',
     afterLabel: 'Modern',
-    // Note: If you have your own images for this, upload them and change these links to '/your-image.jpg'
-    beforeImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop&sat=-100', // Grayscale version
-    afterImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop', // Color version
+    // We keep these as internet links until you upload specific refit photos
+    beforeImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop&sat=-100',
+    afterImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop',
     description: 'Digitally reupholster furniture, declutter surfaces, and stage lifestyle elements to modernize older inventory.',
   },
 ];
 
 const DigitalStaging: React.FC = () => {
-  const [activeModule, setActiveModule] = useState(modules[0]); 
+  const [activeModule, setActiveModule] = useState(modules[0]);
   const visualizerRef = useRef<HTMLDivElement>(null);
 
   const handleModuleSelect = (mod: typeof modules[0]) => {
